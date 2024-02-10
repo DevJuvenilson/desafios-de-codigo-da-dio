@@ -7,9 +7,9 @@
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 
 // Entrada dos valores com a função gets():
-const capitalInicial = parseFloat(gets());
-const taxaJuros = parseFloat(gets());
-const tempoMeses = parseInt(gets());
+const capitalInicial = 500;
+const taxaJuros = 10;
+const tempoMeses = 3;
 
 //!isNaN é uma função embutida em JavaScript que verifica se o valor passado como argumento não é um número.
 if (!isNaN(capitalInicial) && !isNaN(taxaJuros) && !isNaN(tempoMeses) && tempoMeses > 0) {
@@ -19,7 +19,14 @@ if (!isNaN(capitalInicial) && !isNaN(taxaJuros) && !isNaN(tempoMeses) && tempoMe
 
 //TODO: Imprima o resultado com formatação, incluindo o período, o capital inicial, a taxa de juros e o montante final:
 //Lembre-se: Até duas casas decimais para o Capital Inicial e o Montante Final.
-  print(` `);
+  console.log(`Montante em ${tempoMeses} meses, com R$ ${capitalInicial.toFixed(2)} iniciais, ${taxaJuros}% juros, e: R$ ${montanteFinal.toFixed(2)}.`);
 } else {
-  print('Por favor, insira valores validos e um periodo de tempo adequado.');
+  console.log('Por favor, insira valores validos e um periodo de tempo adequado.');
 }
+
+//Dado de entrada:
+//500.00
+//10
+//3
+//Saída esperada:
+//Montante em 3 meses, com R$ 500.00 iniciais, 10% juros, e: R$ 650.00.
