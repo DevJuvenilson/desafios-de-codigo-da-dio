@@ -5,7 +5,7 @@
 
 //Saiba mais sobre isNaN(): https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 
-const valorDinheiro = parseFloat(gets(2000));
+const valorDinheiro = 2000;
 const moedaOrigem = "BRL";
 const moedaDestino = "USD";
 
